@@ -49,8 +49,8 @@ pipeline {
                     echo "📤 Pushing Docker image to Docker Hub..."
                     sh """
                         docker login -u ${DOCKER_USERNAME} -p ${DOCKER_PASSWORD}
-                        docker tag ${DOCKER_IMAGE} muralisocial123/${DOCKER_IMAGE}
-                        docker push muralisocial123/${DOCKER_IMAGE}
+                        docker tag ${DOCKER_IMAGE} karthickkumarkv/${DOCKER_IMAGE}
+                        docker push karthickkumarkv/${DOCKER_IMAGE}
                     """
                 }
             }
